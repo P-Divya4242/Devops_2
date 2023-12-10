@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* ... Your existing styles ... */
+
+        /* Additional style for smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1: Home -->
+    <div id="home" class="background">
+        <div class="main">
+            <h2><b>CONTACT US</b></h2>
+        </div>
+    </div>
+
+    <!-- Section 2: Mobile Contacts -->
+    <div id="mobile" class="background">
+        <div class="main">
+            <h3>MOBILE</h3>
+            <ul>
+                <li>9347162395</li>
+                <li>8790410166</li>
+                <li>9618900353</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 3: Email Contacts -->
+    <div id="email" class="background">
+        <div class="main">
+            <h3>EMAIL</h3>
+            <ul>
+                <li>srivanilekkala@gmail.com</li>
+                <li>divyapaaluru@gmail.com</li>
+                <li>mahiboomireddy@gmail.com</li>
+                <li>electricalserviceprovider@gmail.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 4: Instagram -->
+    <div id="instagram" class="background">
+        <div class="main">
+            <p>Follow us on INSTAGRAM @electricalserviceprovider_ctr</p>
+        </div>
+    </div>
+
+    <!-- Navigation Links -->
+    <div style="position: fixed; top: 10px; right: 10px; z-index: 100;">
+        <a href="#home">Home</a> |
+        <a href="#mobile">Mobile</a> |
+        <a href="#email">Email</a> |
+        <a href="#instagram">Instagram</a>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
